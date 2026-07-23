@@ -18,7 +18,7 @@ public class BestTimeToSellBuy {
 
     int[] prices = { 5, 2, 8, 1, 9, 4 };
 
-    System.out.println("Maximum profit: " + profitMax(prices));
+    System.out.println("Maximum Profit: " + profitMax(prices));
 
   }
 }
