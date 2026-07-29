@@ -10,13 +10,13 @@ public class MergeArray {
     int[] ans = new int [n1+n2];
 
     //first array
-    for(int i=0; i<num1.length;i++){
+    for(int i=0; i<n1;i++){
       ans[i]=num1[i];
     }
 
     //2nd Array
-    for(int i = 0; i<num2.length;i++){
-      ans[num1.length+i]=num2[i];
+    for(int i = 0; i<n2;i++){
+      ans[n1+i]=num2[i];
     }
     Arrays.sort(ans);
     return ans;
