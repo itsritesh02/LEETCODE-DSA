@@ -23,58 +23,71 @@ public class BestTimeToSellBuy {
   }
 }
 
+//-------------------------------------------------------------------------------------------------------------------
 
+/*
+public class BestTimeToSellBuy {
+// Hindi: BestTimeToSellBuy naam ki class banayi.
+// English: Created a class named BestTimeToSellBuy.
 
+    static int profitMax(int prices[]) {
+    // Hindi: profitMax() function stock prices ka array lega
+    // aur maximum profit return karega.
+    // English: The profitMax() method takes an array of stock prices
+    // and returns the maximum profit.
 
+        int min = prices[0];
+        // Hindi: Pehle din ki price ko minimum maan liya.
+        // English: Assume the first day's price is the minimum buying price.
 
-// public class BestTimeToSellBuy {
-//   // BestTimeToSellBuy naam ki class banayi.
+        int profit = 0;
+        // Hindi: Starting me profit 0 hai.
+        // English: Initially, the maximum profit is 0.
 
-//   static int profitMax(int prices[]) {
-//     // profitMax() function stock prices ka array lega
-//     // aur maximum profit return karega.
+        for (int i = 1; i < prices.length; i++) {
+        // Hindi: Loop second day se last day tak chalega.
+        // English: The loop starts from the second day and goes to the last day.
 
-//     int min = prices[0];
-//     // Sabse pehle day ki price ko minimum maan liya.
-//     // Ye ab tak ki sabse sasti buying price hogi.
+            if (prices[i] < min) {
+            // Hindi: Agar current price minimum se bhi chhoti hai,
+            // to minimum update karo.
+            // English: If the current price is smaller than the minimum price,
+            // update the minimum buying price.
 
-//     int profit = 0;
-//     // Starting me profit 0 hai.
-//     // Abhi tak kuch buy/sell nahi kiya.
+                min = prices[i];
+                // Hindi: Naya minimum buying price store kar diya.
+                // English: Updated the minimum buying price.
+            }
 
-//     for (int i = 1; i < prices.length; i++) {
-//       // Second day se last day tak ek-ek price check karenge.
+            if (prices[i] - min > profit) {
+            // Hindi: Check karo current day par sell karne se
+            // profit pehle se zyada mil raha hai ya nahi.
+            // English: Check whether selling today gives more profit
+            // than the current maximum profit.
 
-//       if (prices[i] < min) {
-//         // Agar current price minimum se bhi chhoti hai,
-//         // to ise nayi buying price bana do.
+                profit = prices[i] - min;
+                // Hindi: Maximum profit update kar diya.
+                // English: Updated the maximum profit.
+            }
 
-//         min = prices[i];
-//         // Minimum price update kar di.
-//       }
+        }
 
-//       if (prices[i] - min > profit) {
-//         // Agar current day par sell karne se
-//         // purane profit se zyada profit mil raha hai,
-//         // to profit update karo.
+        return profit;
+        // Hindi: Final maximum profit return kar diya.
+        // English: Return the maximum profit.
+    }
 
-//         profit = prices[i] - min;
-//         // Maximum profit update kar diya.
-//       }
+    public static void main(String[] args) {
+    // Hindi: Program execution yahin se start hota hai.
+    // English: Program execution starts from the main() method.
 
-//     }
+        int[] prices = {5, 2, 8, 1, 9, 4};
+        // Hindi: Stock prices ka input array.
+        // English: Input array of stock prices.
 
-//     return profit;
-//     // Final maximum profit return kar do.
-//   }
-
-//   public static void main(String[] args) {
-//     // Program execution yahin se start hota hai.
-
-//     int[] prices = { 5, 2, 8, 1, 9, 4 };
-//     // Stock prices ka input array.
-
-//     System.out.println("Maximum Profit: " + profitMax(prices));
-//     // Function call kiya aur answer print kar diya.
-//   }
-// }
+        System.out.println("Maximum Profit: " + profitMax(prices));
+        // Hindi: profitMax() function call kiya aur answer print kiya.
+        // English: Called the profitMax() method and printed the result.
+    }
+}
+*/

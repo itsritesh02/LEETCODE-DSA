@@ -40,91 +40,114 @@ static int[] plusOne(int [] arr){
 }
 
 
-
-
-
+//---------------------------------------------------------------------------------------------------------------------------------------------
 
 // import java.util.Scanner;
-// // Scanner class import ki hai taki user se input le saken.
+// // Hindi: Scanner class import ki hai taki user se input le saken.
+// // English: Imported the Scanner class to take input from the user.
 
 // public class PlusOne {
-//   // PlusOne naam ki class banayi.
+//   // Hindi: PlusOne naam ki class banayi.
+//   // English: Created a class named PlusOne.
 
 //   static int[] plusOne(int[] arr) {
-//     // plusOne() function array lega aur usme 1 add karke
-//     // naya result return karega.
+//     // Hindi: plusOne() function array lega aur number me 1 add karega.
+//     // English: The plusOne() method takes an array and adds 1 to the number
+//     // represented by it.
 
 //     int n = arr.length;
-//     // Array ki length n me store kar li.
+//     // Hindi: Array ki length n me store ki.
+//     // English: Stored the length of the array in n.
 
 //     for (int i = n - 1; i >= 0; i--) {
-//       // Loop last index se first index tak chalega.
-//       // Kyuki addition hamesha last digit se hota hai.
+//       // Hindi: Loop last index se first index tak chalega.
+//       // English: The loop starts from the last index and moves towards the first.
 
 //       if (arr[i] < 9) {
-//         // Agar current digit 9 se chhoti hai,
-//         // to usme 1 add karke kaam khatam.
+//         // Hindi: Agar current digit 9 se chhoti hai,
+//         // to usme 1 add karke return kar do.
+//         // English: If the current digit is less than 9,
+//         // increment it by 1 and return the array.
 
 //         arr[i]++;
-//         // Current digit ko 1 se badha diya.
+//         // Hindi: Current digit ko 1 se badha diya.
+//         // English: Incremented the current digit by 1.
 
 //         return arr;
-//         // Updated array return kar diya.
+//         // Hindi: Updated array return kar diya.
+//         // English: Returned the updated array.
 //       }
 
 //       arr[i] = 0;
-//       // Agar digit 9 hai,
-//       // to wo 0 ban jayegi (carry generate hoga).
+//       // Hindi: Agar digit 9 hai to use 0 bana do.
+//       // English: If the digit is 9, change it to 0.
+//       // Hindi: Carry next left digit me chala jayega.
+//       // English: The carry moves to the previous digit.
 //     }
 
 //     int[] ans = new int[n + 1];
-//     // Agar saare digits 9 the,
-//     // to naya array banana padega.
-//     // Size ek bada hoga.
+//     // Hindi: Agar saare digits 9 the,
+//     // to ek naya array banana padega.
+//     // English: If all digits were 9,
+//     // create a new array with one extra digit.
 
 //     ans[0] = 1;
-//     // Sabse pehle index par 1 rakh diya.
-//     // Baaki sab values default 0 hongi.
+//     // Hindi: Pehle index par 1 rakho.
+//     // English: Place 1 at the first index.
 
 //     return ans;
-//     // Final answer return kar diya.
+//     // Hindi: Final answer return kar do.
+//     // English: Return the final result.
 //   }
 
 //   public static void main(String[] args) {
-//     // Program execution yahin se start hota hai.
+//     // Hindi: Program execution yahin se start hota hai.
+//     // English: Program execution starts from the main() method.
 
 //     Scanner sc = new Scanner(System.in);
-//     // Scanner object banaya.
+//     // Hindi: Scanner object banaya.
+//     // English: Created a Scanner object.
 
 //     System.out.print("Enter Size of Array: ");
-//     // User se array ka size puchha.
+//     // Hindi: User se array ka size maanga.
+//     // English: Ask the user to enter the array size.
 
 //     int n = sc.nextInt();
-//     // Size input liya.
+//     // Hindi: Size input liya.
+//     // English: Read the array size.
 
 //     int arr[] = new int[n];
-//     // Array banaya.
+//     // Hindi: Array banaya.
+//     // English: Created an array.
 
 //     System.out.print("Enter Array Elements: ");
-//     // User se array ke elements maange.
+//     // Hindi: User se array ke elements maange.
+//     // English: Ask the user to enter the array elements.
 
 //     for (int i = 0; i < arr.length; i++) {
-//       // Array me values input kar rahe hain.
+//       // Hindi: Loop se array ke elements input kar rahe hain.
+//       // English: Read all array elements using a loop.
 
 //       arr[i] = sc.nextInt();
-//       // Har element read kiya.
+//       // Hindi: Har element input kiya.
+//       // English: Read each element.
 //     }
 
 //     int ans[] = plusOne(arr);
-//     // plusOne() function call kiya.
+//     // Hindi: plusOne() function call kiya.
+//     // English: Called the plusOne() method.
 
 //     for (int val : ans) {
-//       // Enhanced for loop se answer print kar rahe hain.
+//       // Hindi: Enhanced for loop se answer print kar rahe hain.
+//       // English: Using an enhanced for loop to print the result.
 
 //       System.out.print(val + " ");
+//       // Hindi: Har element print kiya.
+//       // English: Printed each element.
 //     }
 
 //     sc.close();
-//     // Scanner band kar diya.
+//     // Hindi: Scanner ko close kar diya.
+//     // English: Closed the Scanner object.
 //   }
 // }

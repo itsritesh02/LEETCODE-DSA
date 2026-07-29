@@ -22,45 +22,69 @@ public class MaxSubArray {
 }
 
 
-// class Solution {
+//-------------------------------------------------------------------------------------------------------
 
-//   public int maxSubArray(int[] nums) {
 
-//     // Step 1: current aur max ko first element se initialize karo
-//     int current = nums[0];
-//     int max = nums[0];
 
-//     // Example:
-//     // nums = [-2,1,-3,4,-1,2,1,-5,4]
-//     //
-//     // current = -2
-//     // max = -2
+/*
+public class MaxSubArray {
+// Hindi: MaxSubArray naam ki class banayi.
+// English: Created a class named MaxSubArray.
 
-//     // Step 2: Second element se loop start
-//     for (int i = 1; i < nums.length; i++) {
+    static int maxSub(int[] arr) {
+    // Hindi: maxSub() function array ka maximum subarray sum return karega.
+    // English: The maxSub() method returns the maximum subarray sum.
 
-//       // Har element par do choices hain
-//       //
-//       // Choice 1:
-//       // Sirf current element se naya subarray start karo.
-//       //
-//       // nums[i]
-//       //
-//       // Choice 2:
-//       // Purane subarray me current element add karo.
-//       //
-//       // current + nums[i]
-//       //
-//       // Jo bada hoga wahi current banega.
+        int max = Integer.MIN_VALUE;
+        // Hindi: max ko sabse chhoti integer value se initialize kiya.
+        // English: Initialize max with the smallest possible integer value.
 
-//       current = Math.max(nums[i], current + nums[i]);
+        for (int i = 0; i < arr.length; i++) {
+        // Hindi: Outer loop har index se subarray start karega.
+        // English: The outer loop starts a subarray from every index.
 
-//       // Ab tak mila hua maximum sum update karo
+            int sum = 0;
+            // Hindi: Har naye starting index ke liye sum ko 0 se start kiya.
+            // English: Initialize sum to 0 for every new starting index.
 
-//       max = Math.max(max, current);
-//     }
+            for (int j = i; j < arr.length; j++) {
+            // Hindi: Inner loop i se last index tak subarray banayega.
+            // English: The inner loop extends the subarray from i to the last index.
 
-//     // Final answer
-//     return max;
-//   }
-// }
+                sum += arr[j];
+                // Hindi: Current element ko sum me add kiya.
+                // English: Add the current element to the running sum.
+
+                if (sum > max) {
+                // Hindi: Agar current sum max se bada hai,
+                // to max ko update karo.
+                // English: If the current sum is greater than max,
+                // update max.
+
+                    max = sum;
+                    // Hindi: Naya maximum subarray sum store kiya.
+                    // English: Store the new maximum subarray sum.
+                }
+            }
+        }
+
+        return max;
+        // Hindi: Final maximum subarray sum return kiya.
+        // English: Return the final maximum subarray sum.
+    }
+
+    public static void main(String[] args) {
+    // Hindi: Program execution yahin se start hota hai.
+    // English: Program execution starts from the main() method.
+
+        int[] arr = {5, 4, -1, 7, 8};
+        // Hindi: Input array.
+        // English: Input array.
+
+        System.out.println(maxSub(arr));
+        // Hindi: maxSub() function call karke answer print kiya.
+        // English: Called the maxSub() method and printed the result.
+    }
+}
+
+*/

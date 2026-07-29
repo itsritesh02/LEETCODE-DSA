@@ -42,96 +42,115 @@ public class RemoveElement {
 
 
 
+//-------------------------------Explanation -------------------------------------------------
 
 // import java.util.Scanner;
-// // Scanner class import ki hai taki user se input le saken.
+// // Hindi: Scanner class import ki hai taki user se input le saken.
+// // English: Imported the Scanner class to take input from the user.
 
 // public class RemoveElement {
-//   // RemoveElement naam ki class banayi.
+//   // Hindi: RemoveElement naam ki class banayi.
+//   // English: Created a class named RemoveElement.
 
 //   static int remove(int nums[], int val) {
-//     // remove() function array aur ek value (val) lega.
-//     // Array se val ko remove karega aur
-//     // new length return karega.
+//     // Hindi: remove() function array aur ek value (val) lega.
+//     // English: The remove() method takes an array and a value to remove.
 
 //     int k = 0;
-//     // k batata hai ki next valid element
-//     // kis index par store hoga.
+//     // Hindi: k batata hai ki next valid element kis index par store hoga.
+//     // English: k represents the index where the next valid element will be stored.
 
 //     for (int i = 0; i < nums.length; i++) {
-//       // Loop array ke har element par chalega.
+//       // Hindi: Loop array ke har element ko check karega.
+//       // English: The loop iterates through every element of the array.
 
 //       if (nums[i] != val) {
-//         // Check karo ki current element
-//         // remove karne wali value ke equal hai ya nahi.
+//         // Hindi: Check karo ki current element remove hone wali value ke equal hai ya
+//         // nahi.
+//         // English: Check whether the current element is different from the value to
+//         // remove.
 
 //         nums[k] = nums[i];
-//         // Agar current element val nahi hai,
-//         // to usko array ke front me store kar do.
+//         // Hindi: Agar element remove nahi karna hai,
+//         // to use array ke front me store kar do.
+//         // English: If the element should not be removed,
+//         // copy it to the front of the array.
 
 //         k++;
-//         // Agle valid element ke liye
-//         // index ko 1 se badha do.
+//         // Hindi: Agle valid element ke liye index badha do.
+//         // English: Move to the next position for storing a valid element.
 //       }
 //     }
 
 //     return k;
-//     // Total valid elements ki count return kar do.
+//     // Hindi: Unique/valid elements ki new length return karo.
+//     // English: Return the new length of the updated array.
 //   }
 
 //   public static void main(String[] args) {
-//     // Program execution yahin se start hota hai.
+//     // Hindi: Program execution yahin se start hota hai.
+//     // English: Program execution starts from the main() method.
 
 //     Scanner sc = new Scanner(System.in);
-//     // Scanner object banaya.
+//     // Hindi: Scanner object banaya.
+//     // English: Created a Scanner object.
 
 //     System.out.println("Enter Size of Array");
-//     // User se array ka size puchha.
+//     // Hindi: User se array ka size maanga.
+//     // English: Ask the user to enter the size of the array.
 
 //     int n = sc.nextInt();
-//     // Size input liya.
+//     // Hindi: Size input liya.
+//     // English: Read the array size.
 
 //     int[] nums = new int[n];
-//     // Array banaya.
+//     // Hindi: Array banaya.
+//     // English: Created an array of size n.
 
 //     System.out.println("Enter Array Elements");
-//     // User se array ke elements maange.
+//     // Hindi: User se array ke elements maange.
+//     // English: Ask the user to enter the array elements.
 
 //     for (int i = 0; i < nums.length; i++) {
-//       // Array me values input kar rahe hain.
+//       // Hindi: Loop se array me values input kar rahe hain.
+//       // English: Use a loop to read all array elements.
 
 //       nums[i] = sc.nextInt();
-//       // Har element read kiya.
+//       // Hindi: Har element input kiya.
+//       // English: Read each element from the user.
 //     }
 
 //     System.out.println("Enter value");
-//     // User se wo value maangi
-//     // jise remove karna hai.
+//     // Hindi: User se wo value maangi jise remove karna hai.
+//     // English: Ask the user for the value to remove.
 
 //     int val = sc.nextInt();
-//     // Remove hone wali value input li.
+//     // Hindi: Remove hone wali value input li.
+//     // English: Read the value to remove.
 
 //     int ans = remove(nums, val);
-//     // remove() function call kiya.
-//     // ans me new length store ho gayi.
+//     // Hindi: remove() function call kiya aur new length store ki.
+//     // English: Call the remove() method and store the new length.
 
 //     System.out.println("New Length: " + ans);
-//     // New length print ki.
+//     // Hindi: New length print ki.
+//     // English: Print the new length of the array.
 
 //     System.out.println("Nums After Removing Value");
-//     // Updated array print karenge.
+//     // Hindi: Updated array print karenge.
+//     // English: Print the array after removing the value.
 
 //     for (int i = 0; i < ans; i++) {
-//       // Sirf valid elements print karenge.
+//       // Hindi: Sirf valid elements print karenge.
+//       // English: Print only the valid elements.
 
 //       System.out.print(nums[i] + " ");
-//       // Updated array ke elements print kiye.
+//       // Hindi: Updated array ke elements print kiye.
+//       // English: Print each remaining element.
 //     }
 
 //     sc.close();
-//     // Scanner band kar diya.
+//     // Hindi: Scanner ko close kar diya.
+//     // English: Closed the Scanner object.
 //   }
 // }
-
-
-

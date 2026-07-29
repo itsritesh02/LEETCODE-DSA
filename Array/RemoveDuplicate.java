@@ -42,89 +42,112 @@ public class RemoveDuplicate {
 }
 
 
-
+//--------------------------------------------------------------------------------------------------------------------------------------
 
 // import java.util.Scanner;
-// // Scanner class import ki hai taki user se input le saken.
+// // Hindi: Scanner class import ki hai taki user se input le saken.
+// // English: Imported the Scanner class to take input from the user.
 
 // public class RemoveDuplicate {
-//   // RemoveDuplicate naam ki class banayi.
+//   // Hindi: RemoveDuplicate naam ki class banayi.
+//   // English: Created a class named RemoveDuplicate.
 
 //   static int removeElements(int arr[]) {
-//     // removeElements() function sorted array se duplicate remove karega.
-//     // Ye unique elements ki count return karega.
+//     // Hindi: Ye function sorted array se duplicate elements remove karega.
+//     // English: This method removes duplicate elements from a sorted array.
 
 //     int k = 0;
-//     // k unique elements ka index batata hai.
-//     // Jahan next unique element store hoga.
+//     // Hindi: k batata hai ki next unique element kis index par store hoga.
+//     // English: k represents the index where the next unique element will be stored.
 
 //     for (int i = 0; i < arr.length - 1; i++) {
-//       // Loop last se ek pehle tak chalega.
-//       // Kyuki hum arr[i] ko arr[i+1] se compare kar rahe hain.
+//       // Hindi: Loop last element se ek pehle tak chalega.
+//       // English: The loop runs from the first element to the second last element.
 
 //       if (arr[i] != arr[i + 1]) {
-//         // Agar current element aur next element alag hain,
-//         // to current element unique hai.
+//         // Hindi: Check karo current element aur next element alag hain ya nahi.
+//         // English: Check whether the current element is different from the next
+//         // element.
 
 //         arr[k] = arr[i];
-//         // Unique element ko array ke starting part me store kar diya.
+//         // Hindi: Agar current element unique hai,
+//         // to use array ke front me store kar do.
+//         // English: If the current element is unique,
+//         // copy it to the front of the array.
 
 //         k++;
-//         // Agle unique element ke liye index badha diya.
+//         // Hindi: Agle unique element ke liye index badha do.
+//         // English: Move to the next position for storing a unique element.
 //       }
+
 //     }
 
 //     arr[k] = arr[arr.length - 1];
-//     // Last element ko bhi store kar diya.
+//     // Hindi: Last element ko bhi store karo.
 //     // Kyuki loop last element tak nahi gaya tha.
+//     // English: Copy the last element because the loop does not process it.
 
 //     k++;
-//     // Last unique element ke baad count badha diya.
+//     // Hindi: Last unique element add hone ke baad count badha do.
+//     // English: Increase the count after storing the last element.
 
 //     return k;
-//     // Total unique elements ki count return kar di.
+//     // Hindi: Total unique elements ki count return karo.
+//     // English: Return the total number of unique elements.
 //   }
 
 //   public static void main(String[] args) {
-//     // Program execution yahin se start hota hai.
+//     // Hindi: Program execution yahin se start hota hai.
+//     // English: Program execution starts from the main() method.
 
 //     Scanner sc = new Scanner(System.in);
-//     // Scanner object banaya.
+//     // Hindi: Scanner object banaya.
+//     // English: Created a Scanner object.
 
 //     System.out.print("Enter Size of Array: ");
-//     // User se array ka size liya.
+//     // Hindi: User se array ka size maanga.
+//     // English: Ask the user to enter the size of the array.
 
 //     int n = sc.nextInt();
-//     // Size input liya.
+//     // Hindi: Size input liya.
+//     // English: Read the array size.
 
 //     int arr[] = new int[n];
-//     // Array banaya.
+//     // Hindi: Array banaya.
+//     // English: Created an array of size n.
 
 //     System.out.println("Enter Array Elements");
-//     // User se array ke elements maange.
+//     // Hindi: User se array ke elements maange.
+//     // English: Ask the user to enter the array elements.
 
 //     for (int i = 0; i < arr.length; i++) {
-//       // Array me values input kar rahe hain.
+//       // Hindi: Loop se array ke elements input kar rahe hain.
+//       // English: Read all elements of the array using a loop.
 
 //       arr[i] = sc.nextInt();
-//       // Har element read kiya.
+//       // Hindi: Har element input kiya.
+//       // English: Read each array element.
 //     }
 
 //     int ans = removeElements(arr);
-//     // Function call kiya.
-//     // ans me unique elements ki total count store ho gayi.
+//     // Hindi: removeElements() function call kiya.
+//     // English: Called the removeElements() method.
 
-//     System.out.println("Array result : " + ans);
-//     // Unique elements ki count print ki.
+//     System.out.println("Array Result: " + ans);
+//     // Hindi: Unique elements ki total count print ki.
+//     // English: Print the total number of unique elements.
 
 //     for (int i = 0; i < ans; i++) {
-//       // Sirf unique elements print karenge.
+//       // Hindi: Sirf unique elements print karenge.
+//       // English: Print only the unique elements.
 
 //       System.out.println(arr[i]);
-//       // Updated array ke unique elements print kiye.
+//       // Hindi: Updated array ke unique elements print kiye.
+//       // English: Print each unique element.
 //     }
 
 //     sc.close();
-//     // Scanner band kar diya.
+//     // Hindi: Scanner ko close kar diya.
+//     // English: Closed the Scanner object.
 //   }
 // }

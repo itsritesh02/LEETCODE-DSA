@@ -21,55 +21,63 @@ class TwoSum {
   }
 }
 
+//---------------------------------------------------------------------------------------------------
 // public class TwoSum {
-//   // TwoSum naam ki class banayi.
+//   // Hindi: TwoSum naam ki class banayi.
+//   // English: Created a class named TwoSum.
 
 //   static void Sum(int[] arr) {
-//     // Sum() function array lega.
-//     // Target ke equal sum wale do elements ke indices print karega.
+//     // Hindi: Sum() function array lega aur target ke equal sum wale
+//     // do elements ke indices print karega.
+//     // English: This method takes an array and prints the indices
+//     // of two elements whose sum is equal to the target.
 
 //     int target = 11;
-//     // Target value 11 hai.
-//     // Hume do aise numbers dhoondhne hain jinka sum 11 ho.
+//     // Hindi: Target value 11 hai.
+//     // English: The target sum is 11.
 
 //     for (int i = 0; i < arr.length; i++) {
-//       // Outer loop.
-//       // Har element ko ek-ek karke first number maan rahe hain.
+//       // Hindi: Outer loop har element ko first number maan kar chalta hai.
+//       // English: The outer loop selects the first element of the pair.
 
 //       for (int j = i + 1; j < arr.length; j++) {
-//         // Inner loop.
-//         // i ke baad wale sab elements ko second number maan rahe hain.
+//         // Hindi: Inner loop i ke baad wale elements ko check karta hai.
+//         // English: The inner loop checks all elements after i.
 
 //         int ans = arr[i] + arr[j];
-//         // Dono elements ka sum nikal rahe hain.
+//         // Hindi: Dono elements ka sum nikal rahe hain.
+//         // English: Calculate the sum of the two elements.
 
 //         if (ans == target) {
-//           // Check karo kya sum target ke equal hai.
+//           // Hindi: Check karo sum target ke equal hai ya nahi.
+//           // English: Check whether the sum is equal to the target.
 
 //           System.out.println("Indices are: " + i + " , " + j);
-//           // Agar sum target ke equal hai,
-//           // to dono indices print kar do.
+//           // Hindi: Pair mil gaya, indices print karo.
+//           // English: Pair found, print their indices.
 
 //           return;
-//           // Pair mil gaya.
-//           // Function yahin khatam kar do.
+//           // Hindi: Function ko yahin stop kar do.
+//           // English: Exit the function because the answer is found.
 //         }
-
 //       }
 //     }
 
 //     System.out.println("No pair found");
-//     // Agar poora array check karne ke baad bhi pair na mile,
-//     // to ye message print hoga.
+//     // Hindi: Agar pair nahi mila to message print karo.
+//     // English: Print this message if no valid pair exists.
 //   }
 
 //   public static void main(String[] args) {
-//     // Program execution yahin se start hota hai.
+//     // Hindi: Program yahin se start hota hai.
+//     // English: Program execution starts from the main method.
 
 //     int[] arr = { 4, 2, 5, 8, 6, 1, 3, 7 };
-//     // Input array banaya.
+//     // Hindi: Input array.
+//     // English: Input array.
 
 //     Sum(arr);
-//     // Sum() function call kiya.
+//     // Hindi: Sum() function call kiya.
+//     // English: Call the Sum() method.
 //   }
 // }
