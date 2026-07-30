@@ -37,6 +37,50 @@ public class MergeArray {
   // --------------------------------------------------------------------------------------------------
 
   /*
+
+
+
+
+
+
+
+/*
+Approach: Brute Force
+
+- Create a new array to store elements of both arrays.
+- Copy all elements of the first array into the new array.
+- Copy all elements of the second array into the remaining positions.
+- Sort the merged array.
+- Return the sorted merged array.
+*/
+
+/*
+Algorithm:
+1. Create a new array of size n1 + n2.
+2. Copy all elements of the first array into the new array.
+3. Copy all elements of the second array into the new array.
+4. Sort the merged array using Arrays.sort().
+5. Return the merged array.
+*/
+
+/*
+Time Complexity: O((n + m) log(n + m))
+- Copying elements takes O(n + m).
+- Sorting takes O((n + m) log(n + m)).
+
+Space Complexity: O(n + m)
+- A new array is created to store the merged elements.
+*/
+
+
+
+
+
+
+
+
+
+
   import java.util.Arrays;
 // Hindi: Arrays class import ki hai taki Arrays.sort() use kar saken.
 // English: Imported the Arrays class to use the Arrays.sort() method.

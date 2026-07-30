@@ -25,6 +25,32 @@ public class BestTimeToSellBuy {
 
 //-------------------------------------------------------------------------------------------------------------------
 
+
+// Approach: Greedy Approach (One Pass)
+
+/*
+Time Complexity: O(n)
+- The array is traversed only once.
+
+Space Complexity: O(1)
+- Only two extra variables (min and profit) are used.
+*/
+
+
+/*
+Algorithm:
+1. Initialize min = prices[0] and profit = 0.
+2. Traverse the array from index 1 to n-1.
+3. If current price is smaller than min, update min.
+4. Otherwise, calculate currentProfit = prices[i] - min.
+5. If currentProfit > profit, update profit.
+6. Return profit.
+*/
+
+
+
+
+
 /*
 public class BestTimeToSellBuy {
 // Hindi: BestTimeToSellBuy naam ki class banayi.

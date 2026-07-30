@@ -22,6 +22,43 @@ class TwoSum {
 }
 
 //---------------------------------------------------------------------------------------------------
+
+/*
+ * Approach: Brute Force
+ * 
+ * - Check every possible pair of elements.
+ * - Calculate the sum of each pair.
+ * - If the sum equals the target, return the indices.
+ * - If no pair is found, print "No pair found".
+ */
+
+/*
+ * Algorithm:
+ * 1. Set the target value.
+ * 2. Traverse the array using the first loop.
+ * 3. For each element, traverse the remaining elements using the second loop.
+ * 4. Calculate sum = arr[i] + arr[j].
+ * 5. If sum == target, print the indices and return.
+ * 6. If no pair is found after all iterations, print "No pair found".
+ */
+
+/*
+ * Time Complexity: O(n²)
+ * - Two nested loops are used.
+ * 
+ * Space Complexity: O(1)
+ * - No extra space is used.
+ */
+
+
+
+
+
+
+
+
+
+ 
 // public class TwoSum {
 //   // Hindi: TwoSum naam ki class banayi.
 //   // English: Created a class named TwoSum.

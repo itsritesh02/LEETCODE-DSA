@@ -44,6 +44,53 @@ public class RemoveElement {
 
 //-------------------------------Explanation -------------------------------------------------
 
+
+
+
+
+
+
+
+/*
+Approach: Two Pointer
+
+- Use one pointer (i) to traverse the array.
+- Use another pointer (k) to store elements that are not equal to val.
+- Copy only the required elements to the front of the array.
+- Return the new length of the array.
+*/
+
+/*
+Algorithm:
+1. Initialize k = 0.
+2. Traverse the array from index 0 to n-1.
+3. If nums[i] != val, copy nums[i] to nums[k].
+4. Increment k.
+5. Continue until the end of the array.
+6. Return k as the new length.
+*/
+
+/*
+Time Complexity: O(n)
+- The array is traversed only once.
+
+Space Complexity: O(1)
+- No extra space is used.
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // import java.util.Scanner;
 // // Hindi: Scanner class import ki hai taki user se input le saken.
 // // English: Imported the Scanner class to take input from the user.

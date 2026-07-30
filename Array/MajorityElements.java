@@ -31,6 +31,44 @@ static int Major(int []arr){
 // ----------------------------------------------------------------------------------------------------
 
 /*
+
+
+
+
+
+
+
+/*
+Approach: Brute Force
+
+- Count the frequency of each element by comparing it with all remaining elements.
+- If the frequency of an element becomes greater than n/2, return that element.
+- If no majority element exists, return -1.
+*/
+
+/*
+Algorithm:
+1. Traverse the array using the first loop.
+2. Initialize count = 1 for the current element.
+3. Compare the current element with all remaining elements.
+4. If the elements are equal, increment count.
+5. If count > n/2, return the current element.
+6. If no majority element is found, return -1.
+*/
+
+/*
+Time Complexity: O(n²)
+- Two nested loops are used.
+
+Space Complexity: O(1)
+- No extra space is used.
+*/
+
+
+
+
+
+
 public class MajorityElements {
 // Hindi: MajorityElements naam ki class banayi.
 // English: Created a class named MajorityElements.

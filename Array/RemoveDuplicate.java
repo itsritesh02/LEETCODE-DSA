@@ -44,6 +44,37 @@ public class RemoveDuplicate {
 
 //--------------------------------------------------------------------------------------------------------------------------------------
 
+/*
+ * Approach: Two Pointer
+ * 
+ * - Use one pointer (i) to traverse the array.
+ * - Use another pointer (k) to store unique elements.
+ * - If the current element is different from the next element, place it at
+ * index k.
+ * - Finally, add the last element and return the count of unique elements.
+ */
+
+/*
+ * Algorithm:
+ * 1. Initialize k = 0.
+ * 2. Traverse the array from index 0 to n-2.
+ * 3. If arr[i] != arr[i+1], store arr[i] at arr[k] and increment k.
+ * 4. After the loop, store the last element at arr[k].
+ * 5. Increment k.
+ * 6. Return k as the number of unique elements.
+ */
+
+/*
+ * Time Complexity: O(n)
+ * - The array is traversed only once.
+ * 
+ * Space Complexity: O(1)
+ * - No extra space is used.
+ */
+
+
+
+
 // import java.util.Scanner;
 // // Hindi: Scanner class import ki hai taki user se input le saken.
 // // English: Imported the Scanner class to take input from the user.

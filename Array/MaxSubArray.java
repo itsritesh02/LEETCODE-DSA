@@ -26,6 +26,48 @@ public class MaxSubArray {
 
 
 
+
+
+
+
+
+
+
+/*
+Approach: Brute Force
+
+- Generate all possible subarrays.
+- Calculate the sum of each subarray.
+- Keep track of the maximum subarray sum.
+- Return the maximum sum.
+*/
+
+/*
+Algorithm:
+1. Initialize max = Integer.MIN_VALUE.
+2. Traverse the array using the first loop.
+3. Initialize sum = 0 for each starting index.
+4. Traverse the remaining elements using the second loop.
+5. Add the current element to sum.
+6. If sum > max, update max.
+7. Return max.
+*/
+
+/*
+Time Complexity: O(n²)
+- Two nested loops are used.
+
+Space Complexity: O(1)
+- No extra space is used.
+*/
+
+
+
+
+
+
+
+
 /*
 public class MaxSubArray {
 // Hindi: MaxSubArray naam ki class banayi.

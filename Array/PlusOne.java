@@ -42,6 +42,57 @@ static int[] plusOne(int [] arr){
 
 //---------------------------------------------------------------------------------------------------------------------------------------------
 
+
+
+
+
+
+
+
+
+
+/*
+Approach: Greedy
+
+- Start checking digits from the last index.
+- If a digit is less than 9, increment it by 1 and return the array.
+- If a digit is 9, change it to 0 and continue to the previous digit.
+- If all digits are 9, create a new array of size n+1 with the first element as 1.
+*/
+
+/*
+Algorithm:
+1. Traverse the array from the last index to the first.
+2. If the current digit is less than 9, increment it and return the array.
+3. Otherwise, set the current digit to 0.
+4. If all digits become 0, create a new array of size n+1.
+5. Set ans[0] = 1.
+6. Return the new array.
+*/
+
+/*
+Time Complexity: O(n)
+- In the worst case, the entire array is traversed once.
+
+Space Complexity: O(1)
+- No extra space is used except when all digits are 9.
+- Worst case: O(n) (for the new array).
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // import java.util.Scanner;
 // // Hindi: Scanner class import ki hai taki user se input le saken.
 // // English: Imported the Scanner class to take input from the user.
