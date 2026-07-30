@@ -1,6 +1,6 @@
 /*724 */
 
-public class pivotIndex {
+public class PivotIndex {
 
   static int findPivot(int[] arr) {
     int n = arr.length;

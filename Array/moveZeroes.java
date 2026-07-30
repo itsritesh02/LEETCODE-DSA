@@ -1,7 +1,7 @@
 /*283 */
 
 
-public class moveZeroes {
+public class MoveZeroes {
 
 
 
