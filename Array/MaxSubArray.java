@@ -1,3 +1,6 @@
+/*53 */
+
+
 public class MaxSubArray {
   static int maxSub(int[] arr) {
     int max = Integer.MIN_VALUE;
@@ -35,6 +38,8 @@ public class MaxSubArray {
 
 /*
 Approach: Brute Force
+
+
 
 - Generate all possible subarrays.
 - Calculate the sum of each subarray.
