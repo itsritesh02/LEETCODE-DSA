@@ -1,3 +1,11 @@
+// -------------Ascending Order-------------------
+
+
+
+
+
+
+
 import java.util.Arrays;
 
 public class SquareArray {
@@ -30,6 +38,63 @@ public class SquareArray {
     printArr(arr);
   }
 }
+
+
+//------------------------------- Descending Order-----------------------
+
+// import java.util.Arrays;
+
+// public class SquareArray {
+
+//   static void printArr(int[] arr) {
+//     for (int i = 0; i < arr.length; i++) {
+//       System.out.print(arr[i] + " ");
+//     }
+//   }
+
+//   static int[] square(int[] arr) {
+
+//     int n = arr.length;
+//     // int ans[] = new int[n];
+
+//     for (int i = 0; i < n; i++) {
+//       arr[i] = arr[i] * arr[i];
+//     }
+//     Arrays.sort(arr);
+//     System.out.println();
+
+//     int left = 0;
+//     int right = n - 1;
+
+//     while (left < right) {
+//       int temp = arr[left];
+//       arr[left] = arr[right];
+//       arr[right] = temp;
+
+//       left++;
+//       right--;
+//     }
+
+
+//     return arr;
+//   }
+
+//   public static void main(String[] args) {
+//     int arr[] = { -1, 2, -3, 1 };
+//     System.out.println("before square");
+//     printArr(arr);
+//     square(arr);
+//     System.out.println("After square");
+//     printArr(arr);
+//   }
+// }
+
+
+
+
+
+
+
 
 
 //------------------------------------------------------------------------------------------------------------------
